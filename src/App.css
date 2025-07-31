@@ -1,0 +1,180 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+.nav{
+  margin: 0px auto;
+  padding: 12px 26px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(5, 9, 12);
+  color: white;
+  box-shadow: 1px 7px 12px rgb(24, 42, 55);
+  text-align: start;
+}
+.heading{
+  width: 450px;
+}
+.title{
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  /* margin-left: 40px; */
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+  margin-right: 12px;
+}
+.title div{
+  background-color: orange;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+#searchBar{
+  border: 1px solid orange;
+  border-radius: 26px;
+  font-size: 16px;
+  padding: 16px 26px;
+  width: 434px;
+  margin-left: 12px;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+#searchBar:focus{
+  outline: 2px solid orange;
+}
+#searchButton{
+  color: orange;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  right: 40px;
+}
+.searchField{
+  /* margin-right: 40px; */
+  display: flex;
+  align-items: center;
+}
+.icon{
+  font-size: 88px;
+}
+.initial{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  object-position: center;
+  color: orange;
+  width: 100%;
+  height: 80vh;
+}
+.main{
+  margin: 16px auto;
+  padding: 12px 26px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80vh;
+  object-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(13,23,30);
+  color: orange;
+}
+.hide{
+  display: none;
+}
+.img{
+  width: 450px;
+  height: 400px;
+  display: flex;
+  justify-content: right;
+  margin-right: 12px;
+}
+.poster{
+  width: 70%;
+  height: 100%;
+}
+.movieDetails{
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.details{
+  width: 450px;
+  text-align: start;
+  margin-left: 12px;
+}
+.detailStyle{
+  color: white;
+}
+@media screen and (max-width:700px) {
+  .nav{
+    padding: 6px 13px;
+    justify-content: space-between;
+  }
+  .heading{
+    width: fit-content;
+  }
+  .title{
+      font-size: 20px;
+      letter-spacing: 1px;
+  }
+  .title div{
+      width: 5px;
+      height: 5px;
+  }
+  #searchButton{
+    height: 12px;
+    right: 30px;
+  }
+
+  #searchBar{
+      font-size: 12px;
+      padding: 12px 18px;
+      width: 180px;
+  }
+  .icon{
+      font-size: 44px;
+  }
+  .initial{
+      font-size: 16px;
+  }
+  .initialTitle{
+    font-size: 16px;
+  }
+  .main{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .img{
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+  }
+  .poster{
+      margin-top: 14px;
+      width: 60%;
+      height: 85%;
+  }
+  .movieDetails{
+      font-size: 12px;
+      margin-bottom: 4px;
+  }
+  .details{
+      width: 300px;
+      margin-top: 10px;
+      text-align: left;
+  }
+}
